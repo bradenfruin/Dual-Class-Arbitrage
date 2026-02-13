@@ -147,8 +147,6 @@ if __name__ == "__main__":
     print("Ann vol:", round(ann_vol * 100, 2), "%")
     print("Sharpe (naive):", round(float(sharpe), 2))
     print("Max drawdown:", round(max_dd * 100, 2), "%")
-    print("\nTrades (last 10):")
-    print(trades.tail(10) if isinstance(trades, pd.DataFrame) else trades)
 
 
     import matplotlib.pyplot as plt
