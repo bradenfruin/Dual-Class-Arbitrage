@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title> Dual Class Arbitrage</title>
+    <style>
+      :root { color-scheme: dark; }
+
+      body {
+        font-family: system-ui, Arial;
+        margin: 24px auto;
+        max-width: 900px;
+        padding: 0 16px;
+
+        background: #09090b; 
+        color: #ffffff;      
+      }
+
+      h1, h2 { color: #ffffff; }
+      p { color: #d4d4d8; }       
+      code { color: #e5e7eb; }
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #27272a;
+        border-radius: 12px;
+        margin: 12px 0 28px;
+        background: #000;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 16px 0 28px;
+        border: 1px solid #27272a;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      th, td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #27272a;
+        text-align: left;
+      }
+
+      th { background: rgba(24,24,27,0.8); }
+      tr:last-child td { border-bottom: none; }
+
+    </style>
+  </head>
+  <body>
+    <h1>Report</h1>
+    <h2>Strategy</h2>
+    <p>
+      A trading strategy that involves taking advantage of the price discrepency that exists between stocks that have dual listings. (Ex: GOOG vs GOOGL)
+    </p>
+    
+    <h2>Summary Metrics</h2>
+      <table>
+        <tr><th>Metric</th><th>FGI Strategy</th><th>Buy & Hold SPY</th></tr>
+        <tr><td>Date range</td><td colspan="2">2025-12-15 → 2026-02-13</td></tr>
+        <tr><td>Final equity</td><td>$107,198.14</td></tr>
+        <tr><td>Starting equity </td><td>$100,000.0</td></tr>
+        <tr><td>Max drawdown</td><td>:-1.65%</td></tr>
+        <tr><td>Sharpe ratio</td><td>0.72</td></tr>
+      </table>
+    <h2>Equity Curve</h2>
+    <img src="equity.png" alt="Equity curve" />
+    
+  </body>
+</html>
